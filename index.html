@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>names</title>
-    <style>
-        a{
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <ol>
@@ -283,14 +279,62 @@
     <button type="submit">submit</button>
 </form>
 <br>
-<dir>
-   choose  your option 
-   <select name="profession" id="profession">
-    <option value="stu">student</option>
-    <option value="tea">teacher</option>
-    <option value="Er" selected>engineer</option>
-   </select>
-</dir>
-<button type="submit">submit</button>
+<form action="server">
+    <div>
+        choose  your option 
+        <select name="profession" id="profession">
+         <option value="stu">student</option>
+         <option value="tea">teacher</option>
+         <option value="Er" selected>engineer</option>
+        </select>
+    
+     </div>
+     <div>
+        <h4>hi i am h4</h4>
+     </div>
+     <div>
+        <h5>i am h5</h5>
+     </div>
+     <br>
+     <div>
+         <label for="ran">select your range </label>
+         <input type="range" name="vol" id="ran" min="0" max="100" step="1" value="50">
+         <br>
+         <label for="feed">write your feedback</label>
+         <br>
+         <textarea name="feedback" id="feed" cols="60" rows="3" placeholder="write  here "></textarea>
+         <br>
+         <!-- QUESTION PRACTICE -->
+         <h2><b>Registration form</b></h2>
+         <label for="data"></label>
+         <input type="text" name="data" id="data" placeholder="first name">
+         <label for="data"></label>
+         <input type="text" name="data" id="data" placeholder="last name">
+         <br>  
+         <label for="id">please select your gender</label>
+         <select name="form" id="id">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">other</option>
+         </select>
+         <br>
+         <label for="agree">do you agree to all terms and conditions ?</label>
+         <input type="checkbox" name="agree" id="agree">
+         <label for="agree"> yes , i agree.</label>
+        
+         <br>
+         <button type="submit">Register</button>
+         <br>
+         <button type="submit">submit</button>
+     </div>
+
+     <div>
+        <h2>Hi there!</h2>
+        <p>my name is raushan kumar & my job is to help you.</p>
+        <button type="submit">Need Help</button value="help">
+     </div>
+    
+    <!-- for color use color picker on google  -->
+</form>
 </body>
 </html>

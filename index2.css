@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    border: solid ;
+    background-color: yellow;
+}
+h2
+{
+    text-align: right;
+}
+h3{
+    text-align: left;
+}
+h4{
+    text-align: center;
+}
+.p
+{
+    text-align: start;
+}
+.p1{
+    text-align: end;
+}
+.p3
+{
+    text-align: justify;
+}
