@@ -2,25 +2,79 @@ h1{
     text-align: center;
     border: solid ;
     background-color: yellow;
+    height: 100%;
+    width: 100%;
+color :rgb(177, 7, 224)   
+
+}
+  
+nav{
+    background-color: black;
+    color: white;
+    word-spacing: 150px;
+   
 }
 h2
 {
     text-align: right;
+   font-weight: normal;
 }
+
 h3{
     text-align: left;
 }
 h4{
     text-align: center;
+    
 }
-.p
+.p1
 {
     text-align: start;
+   font-weight: 900;
+   line-height: 3 ;
+   letter-spacing: 5px;
+   font-size:8px;
 }
-.p1{
+
+.p2{
     text-align: end;
+    line-height: normal  ;
 }
 .p3
 {
     text-align: justify;
+    line-height: 0.5;
+}
+ .test
+ {background-color: aqua  ;
+color: black;
+ }
+#t
+{
+    text-decoration:  line-through;
+    
+}
+#tt
+{
+    text-decoration: yellow underline  ;
+
+    text-transform: uppercase;
+}
+
+#ttt
+{
+    text-decoration: double black overline;
+    background-color: rgb(201, 217, 233);
+   ;
+}
+#tttt
+{
+    text-decoration: wavy blue underline ;
+    background-color: aqua;
+}           
+a{
+    color:white;
+    text-decoration: none;
+   font-style:oblique ;
+     cursor: pointer;
 }
