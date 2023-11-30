@@ -1,4 +1,4 @@
-h1{
+.head{
     text-align: center;
     border: solid ;
     background-color: yellow;
@@ -7,7 +7,6 @@ h1{
 color :rgb(177, 7, 224)   
 
 }
-  
 nav{
     background-color: black;
     color: white;
@@ -44,11 +43,13 @@ h4{
 {
     text-align: justify;
     line-height: 0.5;
+    
+
 }
  .test
  {background-color: aqua  ;
 color: black;
- }
+ } 
 #t
 {
     text-decoration:  line-through;
@@ -56,16 +57,14 @@ color: black;
 }
 #tt
 {
-    text-decoration: yellow underline  ;
+    text-decoration: yellow underline ;
 
     text-transform: uppercase;
 }
-
 #ttt
 {
     text-decoration: double black overline;
     background-color: rgb(201, 217, 233);
-   ;
 }
 #tttt
 {
@@ -77,4 +76,20 @@ a{
     text-decoration: none;
    font-style:oblique ;
      cursor: pointer;
+}
+.p4
+{
+    font-family:  cursive;
+}
+.practice
+{
+    color: #ffa511;
+    font-family: league spartan;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase ;
+    text-decoration: double teal underline;
 }
