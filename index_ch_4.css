@@ -1,0 +1,73 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+div{
+    
+    width: 500x;
+    height: 200px;
+    background-color: pink;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    /* in sortform */
+    border: 5px solid black;
+}
+h1{
+    /* border-width: 5px;
+    border-style: dotted;
+    border-color: black; */
+    border: 5px dotted green;
+}
+.border
+{   height: 500px;
+    width: 800px;
+    margin: 30px;
+    background-color: white;
+    /* new border properties */
+    border-width: 10px;
+    border-left-style:  dashed;
+    border-left-color: blue;
+    border-right-style:  dotted;
+    border-right-color: #ff0077;
+    border-top-style:  double;
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-style:  solid;
+    border-bottom-color: rgb(255, 0, 0);
+    border-top-right-radius: 60px ;
+    border-bottom-left-radius: 60px ;
+    background-color: pink;
+}
+/* day 7 vi-6 */
+.padding {
+    background-color: yellow;
+}
+.inner{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 30em;
+    margin-bottom: 20px;
+    margin-right:10px ;
+   padding-top: 30px;
+   padding-left: 80px;
+   padding-right: 20px;
+   padding-bottom:20px ;
+   color: rgb(255, 255, 255);
+} 
+
+.ops{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 0, 1 );
+    opacity: 0;
+    color:black
+}
+.op{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 0, 0.8);
+    opacity: 0.5;
+    color:black
+}

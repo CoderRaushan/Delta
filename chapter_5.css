@@ -1,0 +1,18 @@
+ /* how to make inline element  */
+ h1{
+    display: inline;
+ }
+  /* how to make block element  */
+ span{
+    display: block;
+ }
+ /* for making inline we use inline block because inline will not work */
+ div
+ {
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    display: inline-block;
+    /* margin: 0 auto; */
+ }

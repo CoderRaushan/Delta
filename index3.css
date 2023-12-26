@@ -25,6 +25,15 @@ h3
 {
     color: #b92b27;
 }
+h1::first-letter{
+    color: yellow;
+}
+#myid::first-line{
+    color: blueviolet;
+}
+#myid::selection{
+    background-color: yellow;
+}
 button
 {
     background-color: green;
@@ -61,6 +70,18 @@ button+button
 body a
 {
     text-decoration: none   ;
+}
+p:active{
+    font-weight: bold;
+background-color: red;
+}
+ button:active{ /* active hover se alag hai jaise hi bottom per click hoga color ya back color change hoga lekin hover me kewal click karne per hi hota hai */
+color: black;
+background-color: white; 
+}
+input[type="radio"]:checked+ label{
+ color:red;
+ font-weight: bold ;
 }
 .container
 {
