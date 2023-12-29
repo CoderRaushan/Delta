@@ -1,0 +1,40 @@
+.main{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(186, 186, 32);
+    border-radius: 50%;
+    /* position:absolute; */
+}
+.maouth{
+    height: 75px;
+    width: 200px;
+    background-color: green;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    position:absolute;
+    margin-top: 250px;
+    margin-left: 100px;
+
+}
+.eyes{
+
+    position: absolute;
+    display: inline-block;
+    top: 120px;
+    left: 100px;
+    
+}
+.left,.right
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+
+   
+}
+.right{
+    left: 158px;
+}

@@ -1,0 +1,26 @@
+.main{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-evenly;
+    align-content: space-around;
+
+}
+.main div
+{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(194, 94, 110);
+    text-align: center;
+    
+}

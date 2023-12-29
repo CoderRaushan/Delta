@@ -1,0 +1,21 @@
+.main{
+    height: 50px;
+    width: 900px;   
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+}
+.child{
+    display: flex;
+}
+#op{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-left: 5px;
+    line-height: 50px;   
+}
