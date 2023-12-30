@@ -1,0 +1,45 @@
+.main{
+    height: 300px;
+    width: 600px;
+    background-color:pink;
+    display: grid;   /*by default grid is  block element 
+    so if i have to maken this inline element 
+    then we have to use inline-grid*/
+
+    /* display: inline-grid;  */
+
+    /* grid-template-rows: 50px 50px 50px 50px 50px ;
+    grid-template-columns: 100px 100px 100px ; */
+
+    grid-template-rows:repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+    /* grid gap */
+    /* row-gap: 20px;
+    column-gap: 20px;
+    grid-gap: 10px 10px ;
+     */
+
+    justify-items: center;  /* for align item in horizontaly*/
+    align-items: center;  /* for align item in vertically*/
+}
+.child{
+    height: 50px;
+    width: 100px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    text-align: center;
+    
+
+}
+
+/* grid column--> to show this please comment height and width  */
+/* #un{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-column: 1/5;
+     grid row--> to show this please comment height and width  
+    grid-row-start: 1;
+    grid-row-end: 5;
+} */
+
