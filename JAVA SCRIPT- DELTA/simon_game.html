@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn1 {
+            height: 200px;
+            width: 200px;
+            background-color: #f99b45;
+            border-radius: 2rem;
+            border: 10px solid black;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            height: 200px;
+            width: 200px;
+            background-color: #d95980;
+            border-radius: 2rem;
+            border: 10px solid black;
+            cursor: pointer;
+        }
+
+        .btn3 {
+            height: 200px;
+            width: 200px;
+            background-color: #819ff9;
+            border-radius: 2rem;
+            border: 10px solid black;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+
+        .btn4 {
+            height: 200px;
+            width: 200px;
+            background-color: #63aac0;
+            border-radius: 2rem;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simon Game!</h1>
+    <h3>Press Any Key To Start The Game</h3>
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn1" type="button"></div>
+            <div class="btn2" type="button"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn3" type="button"></div>
+            <div class="btn4" type="button"></div>
+        </div>
+    </div>
+<script src="simon_game.js"></script>
+</body>
+
+</html>

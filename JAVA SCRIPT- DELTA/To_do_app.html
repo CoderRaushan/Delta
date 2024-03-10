@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do app</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+        }
+        button
+        {
+            background-color: yellow;
+            color: black;
+            font-size: 2rem;
+            border-radius: 10px;    
+        }
+        input
+        {
+            font-size: 2rem;
+            border-radius: 10px;
+            width:880px;
+        }
+        ul >li
+        {
+            color: white;
+            font-size: 2rem;
+        }
+        @media(max-width:658px)
+        {
+        input
+        {
+            font-size: 2rem;
+            border-radius: 10px;
+            width:300px;
+        } 
+        h1{
+            text-align: center;
+            /* font-size: 1rem; */
+            color: white;
+        }
+        button
+        {
+            background-color: yellow;
+            color: black;
+            /* font-size: 2rem; */
+            border-radius: 10px;    
+        }
+        
+        }
+    </style>
 </head>
+
 <body>
     <h1>To Do App</h1>
-    <input type="text" name="" id="" placeholder="Add a task..">
-    <buttonn class="add">Add Task</button>
-    <ul>
-        <li>Mango <button>delete</button></li>
-        <li>Apple <button>delete</button></li>
-    </ul>
+    
+    <div class="box">
+       <div class="inp">
+        <input type="text" name="" id="" placeholder="kuch likh kar add task per click karo no tab to pata chalega">
+        <button class="add">Add Task</button>
+       </div>
+        <ul>
+            
+        </ul>
+    </div>
     <script src="To_do_app.js"></script>
 </body>
+
 </html>
