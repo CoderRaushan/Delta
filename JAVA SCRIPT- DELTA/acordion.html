@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/14b9c917be.js" crossorigin="anonymous"></script>
+    <title>Accordion</title>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            background-color:#e3edf7;
+        }
+        .accordion
+        {
+            padding: 10px 40px 10px 40px;
+            height: auto;
+            width: auto;
+            /* background-color: rgb(166, 166, 219); */
+            background-color: #e3edf7;
+            margin-bottom: 1rem;
+            box-shadow: 2px 2px 5px black;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .question
+        {
+           display: flex;
+           align-items:center;
+           justify-content: space-between;
+           flex-direction: row;
+        }
+        .main
+        {
+            padding: 1rem 4rem 1rem 4rem;
+        }
+        .icon
+        {
+            margin-left:.7rem;
+            transition: transform .3s;
+        }
+        .icon.active
+        {
+        transform: rotate(-180deg);
+        }
+        .answer
+        {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s;
+        }
+        /* .answer.active
+        {
+            max-height: fit-content;
+        } */    
+   
+    </style>
+</head>
+
+<body>
+    
+   <div class="main">
+    <h1>FQA's</h1>
+    <div class="accordion">
+        <div class="question">
+            <h3>Q1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>
+            <i class="fa-sharp fa-solid fa-caret-down icon "></i>
+        </div>
+        <div class="answer">
+            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                facere a sint quam laudantium sapiente et!</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="question">
+            <h3>Q2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>
+            <i class="fa-sharp fa-solid fa-caret-down icon"></i>
+        </div>
+        <div class="answer">
+            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                facere a sint quam laudantium sapiente et!</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="question">
+            <h3>Q3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h3>
+            <i class="fa-sharp fa-solid fa-caret-down icon"></i>
+        </div>
+        <div class="answer">
+            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                facere a sint quam laudantium sapiente et!</p>
+        </div>
+    </div>
+   </div>
+    <script src="acordion.js"></script>
+</body>
+
+</html>
