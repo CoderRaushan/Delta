@@ -7,14 +7,13 @@
     <script src="https://kit.fontawesome.com/14b9c917be.js" crossorigin="anonymous"></script>
     <title>Accordion</title>
     <style>
-        body
-        {
+        body {
             padding: 0;
             margin: 0;
-            background-color:#e3edf7;
+            background-color: #e3edf7;
         }
-        .accordion
-        {
+
+        .accordion {
             padding: 10px 40px 10px 40px;
             height: auto;
             width: auto;
@@ -25,80 +24,78 @@
             cursor: pointer;
             border-radius: 8px;
         }
-        .question
-        {
-           display: flex;
-           align-items:center;
-           justify-content: space-between;
-           flex-direction: row;
+
+        .question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
         }
-        .main
-        {
+
+        .accordion_container {
             padding: 1rem 4rem 1rem 4rem;
         }
-        .icon
-        {
-            margin-left:.7rem;
+
+        .icon {
+            margin-left: .7rem;
             transition: transform .3s;
         }
-        .icon.active
-        {
-        transform: rotate(-180deg);
+
+        .icon.active {
+            transform: rotate(-180deg);
         }
-        .answer
-        {
+
+        .answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height .3s;
         }
+
         /* .answer.active
         {
             max-height: fit-content;
-        } */    
-   
+        } */
     </style>
 </head>
 
 <body>
-    
-   <div class="main">
-    <h1>FQA's</h1>
-    <div class="accordion">
-        <div class="question">
-            <h3>Q1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </h3>
-            <i class="fa-sharp fa-solid fa-caret-down icon "></i>
+    <div class="accordion_container">
+        <h1>FQA's</h1>
+        <div class="accordion">
+            <div class="question">
+                <h3>Q1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </h3>
+                <i class="fa-sharp fa-solid fa-caret-down icon "></i>
+            </div>
+            <div class="answer">
+                <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                    facere a sint quam laudantium sapiente et!</p>
+            </div>
         </div>
-        <div class="answer">
-            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
-                facere a sint quam laudantium sapiente et!</p>
-        </div>
-    </div>
 
-    <div class="accordion">
-        <div class="question">
-            <h3>Q2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </h3>
-            <i class="fa-sharp fa-solid fa-caret-down icon"></i>
+        <div class="accordion">
+            <div class="question">
+                <h3>Q2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </h3>
+                <i class="fa-sharp fa-solid fa-caret-down icon"></i>
+            </div>
+            <div class="answer">
+                <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                    facere a sint quam laudantium sapiente et!</p>
+            </div>
         </div>
-        <div class="answer">
-            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
-                facere a sint quam laudantium sapiente et!</p>
+        <div class="accordion">
+            <div class="question">
+                <h3>Q3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </h3>
+                <i class="fa-sharp fa-solid fa-caret-down icon"></i>
+            </div>
+            <div class="answer">
+                <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
+                    facere a sint quam laudantium sapiente et!</p>
+            </div>
         </div>
     </div>
-    <div class="accordion">
-        <div class="question">
-            <h3>Q3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </h3>
-            <i class="fa-sharp fa-solid fa-caret-down icon"></i>
-        </div>
-        <div class="answer">
-            <p>Ex tempora dolore nemo autem accusamus fugit nulla, iste vitae sunt omnis magnam accusantium dolores
-                facere a sint quam laudantium sapiente et!</p>
-        </div>
-    </div>
-   </div>
     <script src="acordion.js"></script>
 </body>
-
 </html>
