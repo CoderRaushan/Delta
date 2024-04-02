@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
     <style>
-        label
-{
-    display: block;
-}
+        label 
+        {
+            display: block;
+        }
+        *{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <form method="get" action="/register">
+<h1>Get request form</h1>
+    <form method="get" action="http://localhost:8085/register">
         <label for="username">username</label>
         <input type="text" name="username">
         <label for="password">Password: </label>
-        <input type="password" name="password" id="">
+        <input type="password" name="password">
+        <button>submit</button>
+    </form>
+    <hr>
+    <h1>post request form</h1>
+    <form method="post" action="http://localhost:8085/register">
+        <label for="username">username</label>
+        <input type="text" name="username">
+        <label for="password">Password: </label>
+        <input type="password" name="password">
+        <button>submit</button>
     </form>
 </body>
 </html>
