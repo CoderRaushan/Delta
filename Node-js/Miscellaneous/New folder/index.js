@@ -11,7 +11,7 @@ app.get("/register",(req,res)=>
 app.post("/register",(req,res)=>
 {
     let {username,password}=(req.body);
-    res.send(`psting response,welcome ${username} and password is:${password}`);
+    res.send(`posting response,welcome ${username} and password is:${password}`);
 });
 app.listen(port,()=>{
     console.log(`Server is listening on port ${port}`);
