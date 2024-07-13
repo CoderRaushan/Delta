@@ -12,12 +12,12 @@ res.render("home.ejs");
 });
 
 
-// app.get("/ig/:username",(req,res)=>
-// {
-// let followers=["rani","paani","gyani","payali"];
-// let {username}=req.params;
-// res.render("instagram.ejs",{username,followers});
-// });
+app.get("/ig/:username",(req,res)=>
+{
+let followers=["rani","paani","gyani","payali"];
+let {username}=req.params;
+res.render("instagram.ejs",{username,followers});
+});
 
 
 

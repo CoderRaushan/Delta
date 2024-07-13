@@ -3,16 +3,19 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: 3px solid rgb(102, 255, 0);
-  box-shadow: 2px 2px 37px 3px black;
-  border-radius: 1rem;
-  color: white;
-  background: linear-gradient(rgb(36, 183, 36),blue);
 }
 
-body
-{
-  background: linear-gradient(blue,green);
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {

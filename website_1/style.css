@@ -1,0 +1,307 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    color: white ;
+    overflow: hidden;
+    
+}
+body{
+    background-color: black;
+}
+.main
+{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+}
+.sidebar
+{
+background-color: black;
+/* border-radius: 1rem;  */
+width: 340px;
+margin-right: .7rem;
+}
+.main-content
+{
+    background-color:  #121212;
+    flex: 1;    /*iska matlab hai ki sab content ko jagah milne ke baad jitna bhi jagah hai sab mere ko dedo*/
+    border-radius: 1rem;
+    overflow: auto;
+}
+.music-player
+{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+}
+.nav
+{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option
+{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover
+{
+    opacity: 1;
+}
+.nav-option i
+{   
+    font-size: 1.20rem;
+}
+.nav-option a
+{    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.lib-option img
+{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.option 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+.library
+{   margin-top: .5rem;
+    border-radius: 1rem;
+    background-color: #121212;
+}
+.icons 
+{
+    font-size: 1.25rem;
+   
+}
+.icons i
+{
+margin-right: 1rem;
+opacity: 0.7;
+}
+.icons i:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.box
+{
+    height: 7rem;
+    background-color: #232323;
+    border-radius: .75rem;
+    margin: 0.75rem 0.6rem 1.75rem 0;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.badge
+{
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 100px;
+    padding: .25rem 1rem;
+    font-weight: 700;
+    margin-top: .7rem;
+    height: 2rem;
+    width: fit-content;;
+}
+.box-p1
+{
+font-size: 1rem;
+font-weight: 600;
+}
+.box-p2
+{
+font-size: 0.8rem;
+}
+.sticy_navbar
+{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+    z-index:1;
+}
+.icon-left
+{
+    margin-left: 1.3rem;
+}
+.margin
+{
+    margin-right: 1rem;
+}
+.bell
+{
+    margin-top: 11px;
+    margin-right: 1rem;
+    border: 6px solid black;
+    border-radius: 50px;
+}
+.icon-right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.back
+{
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media(max-width:1000px)
+{
+    .hide
+    {
+        display: none;
+    }
+}
+.card
+{
+    background-color: #171717;
+    width: 150px;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    cursor:pointer;
+}
+.card:hover
+{
+    background-color: #2b2b2b;
+    transition: ease-in;
+    transition-duration: .3s;
+}
+
+.card_img
+{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.main-content
+{
+    padding: 0 1.5rem 0 1.5rem; 
+}
+.card_title
+{
+    font-weight: 600;
+}
+.card_info
+{
+    font-size: .75rem;
+    opacity: .7;
+}
+.cards_container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer
+{
+    height: 300px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line
+{
+    height: 50%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: .4;
+}
+.music-player
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album
+{
+width: 25%;
+background-color: pink;
+
+}
+.player
+{
+    width: 50%;
+    /* background-color: orange; */
+}
+.controls
+{
+    width: 25%;
+    background-color: yellow;
+}
+.player-controls-icon
+{
+height: 1rem;
+margin-right: 2rem;
+opacity: .7;
+
+}
+.player-controls-icon:hover
+{
+    opacity: 1 ;
+}
+
+.player-controls
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar
+{
+    width: 70%;
+    appearance: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track
+{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:.2rem;  
+}
+
+.progress-bar::-webkit-slider-thumb
+{
+    appearance:none; 
+    height:1rem;
+    width: 1rem;
+    background-color: #1bd770;
+    border-radius: 50%;
+    margin-top: -6px;
+}

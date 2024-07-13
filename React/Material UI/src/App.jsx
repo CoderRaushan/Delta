@@ -8,6 +8,8 @@ import SendIcon from '@mui/icons-material/Send';
 // alert message
 import Alert from '@mui/material/Alert';
 import SearchBox from './SearchBox';
+import InfoBox from './InfoBox';
+import WeatherApp from './WeatherApp';
 function App() {
   return (
     <>
@@ -32,10 +34,7 @@ function App() {
       <Alert severity="info">This is an info Alert.</Alert>
       <Alert severity="warning">This is a warning Alert.</Alert>
       <Alert severity="error">Delete Option is given</Alert> */}
-
-
-          <SearchBox/>
-          
+       <WeatherApp/>
       </div>
     </>
   )

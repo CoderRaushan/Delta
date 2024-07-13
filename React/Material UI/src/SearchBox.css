@@ -1,0 +1,24 @@
+.search_btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.textbox
+{
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    border-style: solid;
+    border:none;
+    color: black;
+    height: 40px;
+    width: auto;
+    padding-left:10px;
+}
+.search_heading
+{
+    margin-top: -1rem;
+}
