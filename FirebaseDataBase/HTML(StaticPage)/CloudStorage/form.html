@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtimeDatabase Form</title>
+    <!-- Step 1: Include Firebase CDN links -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <style>
+        form {
+            text-align: center;
+            border: 2px solid black;
+            padding: 2rem;
+            border-radius: 2rem;
+            background-color: #591c85;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="registerForm" method="POST" onsubmit="formdatasubmition(event)">
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" placeholder="Email" required /> <br /> <br />
+
+        <label for="name">Name </label>
+        <input type="text" name="name" id="name" placeholder="Name" required /> <br /> <br />
+
+        <label for="username">Username </label>
+        <input type="text" name="username" id="username" placeholder="Username" required /> <br /> <br />
+
+        <label for="password">Password </label>
+        <input type="password" name="password" id="password" placeholder="Password" required /> <br /> <br />
+
+        <label for="remark">Comment </label><br />
+        <textarea name="remark" id="remark" rows="15" cols="45"></textarea><br /><br />
+
+        <label for="rating">Rating </label><br />
+        <input type="number" name="rating" id="rating" min="1" max="5" /><br /><br />
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        // Step 2: Firebase configuration
+        const firebaseConfig = 
+        {
+            apiKey: "AIzaSyBMi-GI7H-Zi14hAndz0QFuzXz6-OAm3iM",
+            authDomain: "cloudstoreage-e68c3.firebaseapp.com",
+            projectId: "cloudstoreage-e68c3",
+            storageBucket: "cloudstoreage-e68c3.appspot.com",
+            messagingSenderId: "169111280001",
+            appId: "1:169111280001:web:39d1fce64d221cabf6f080",
+            measurementId: "G-8S6B12BTV0"
+        };
+
+        // Step 3: Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // step 4:
+        // Reference to the Firebase Realtime Database
+        const contactformDb = firebase.database().ref("ContactFormData");
+
+        async function formdatasubmition(event) 
+        {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let name = document.getElementById("name").value;
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let remark = document.getElementById("remark").value;
+            let rating = document.getElementById("rating").value;
+
+            const newContactFormDb = await contactformDb.push();
+            newContactFormDb.set({
+                email: email,
+                name: name,
+                username: username,
+                password: password,
+                remark: remark,
+                rating: rating
+            });
+            alert("data saved successfully");
+        }
+    </script>
+</body>
+</html>

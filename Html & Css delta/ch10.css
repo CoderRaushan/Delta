@@ -1,0 +1,98 @@
+
+a{
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    animation-name: anchor;
+    animation-duration: .7s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* shorthand */
+    /* animation:anchor .7s ease-in infinite normal; */
+}
+
+
+@keyframes anchor{
+from{
+    background-color:yellow;
+}
+to{
+    background-color:blueviolet ;
+}
+
+}
+
+
+
+.div
+{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: bulb;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+@keyframes bulb{
+    0%{
+        background-color: green;
+        color: aqua;
+    }
+    30%{
+        background-color: rgb(165, 123, 174);
+        color: blue;
+    }
+    50%{
+        background-color: blue;
+        color: yellow;
+    }
+    80%{
+        background-color: yellow;
+        color: black;
+    }
+    100%{
+        background-color: black;
+        color: white;
+    }
+}
+
+h1{
+    background-color: black;
+    color: white;
+}
+@media(orientation:landscape)
+{
+ 
+
+    h1{
+        background-color: yellow;
+        color:blue;
+    }
+}
+
+.box{
+    height: 150px;
+    width: 150px ;
+    border-radius: 2px solid black;
+    background-color: rgb(127, 95, 111);
+}
+.one{
+background-color: aquamarine;
+position: relative;
+z-index: 1;
+} 
+.two{
+background-color: rgb(145, 125, 145);
+position: relative  ;
+bottom: 50px;
+z-index: 2;
+}
+

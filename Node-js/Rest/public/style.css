@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 240, 110);
+}
+h1
+{
+    color:rgb(153, 69, 232);
+    text-align: center;
+}
+.post
+{
+  
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 4rem;
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+.user
+{
+    font-style: italic;
+}
+a{
+ 
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-decoration: none;
+    color: black;
+}
+.viewclass
+{
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+button{
+    background-color:blue;
+    color: white;
+}

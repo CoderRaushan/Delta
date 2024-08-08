@@ -1,0 +1,27 @@
+Q.how to user tailwindCss in html file or in our project
+#using PostCss
+
+step 1:npm install -D tailwindcss postcss autoprefixer
+
+step 2:npm install vite
+
+step 3:npx tailwindcss init -p
+
+step 4:set content: ["*"] in tailwind.config.js file
+
+step 5.make a file for css called style.css/any name and paste this=>
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+step 6:  add this one in package.json file 
+ "scripts":
+  {
+    "start":"vite"
+  }
+
+step 7: link css file with html file 
+
+stepm 8: run this command to open code and for run the project 
+npm run start

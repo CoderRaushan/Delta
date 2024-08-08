@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show users</title>
+</head>
+<body>
+    <table border="black">
+        <tr>
+            <td>
+                id
+            </td>
+            <td>
+                username
+            </td>
+            <td>
+                email
+            </td>
+            <td>
+                password
+            </td>
+            <td>
+                Edit  
+            </td>
+            <td>
+                Delete
+            </td>
+            <td>
+                <a href="http://localhost:6600/user/create"><button>create user</button></a>
+
+            </td>
+        </tr>
+        <%for(user of result1){%>
+            <tr>
+                <td><%=user.id%></td>
+                <td><%=user.username%></td>
+                <td><%=user.email%></td>
+                <td><%=user.password%></td>
+                <td>
+                    <form method="get" action="/user/<%=user.id%>/edit">
+                        <button>edit username</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="get" action="/user/<%=user.id%>/delete">
+                        <button>delete</button>
+                    </form>
+                </td>
+            </tr> 
+        <%}%>
+    </table>
+</body>
+</html>
+
