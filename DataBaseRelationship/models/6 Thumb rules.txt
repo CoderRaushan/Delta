@@ -1,0 +1,39 @@
+Basics of One-to-N Relationships:
+1.One-to-Few:
+Embedding: Suitable when the number of embedded documents is small. Example: Embedding a list of addresses within a person document.
+Advantage: Efficient to query as all data is in a single document.
+Disadvantage: If the embedded documents need to be accessed independently or if the array grows large, embedding may not be ideal.
+
+2.One-to-Many:
+Referencing: Use when the number of related documents is large or when documents should be accessed independently. Example: A product having many parts with references to part documents.
+Advantage: Documents are modular and can be updated independently.
+Disadvantage: Requires additional queries to retrieve the related documents.
+
+3.One-to-Squillions:
+Parent-Referencing: Useful for cases where the child documents are numerous. Example: Storing log messages for a host where messages are referenced from the log document.
+Advantage: Manages high volumes of related data effectively.
+Disadvantage: Requires efficient querying and indexing to manage the large number of references.
+Intermediate Techniques:
+
+*Two-Way Referencing:
+Combines references in both directions. Example: In a task-tracking system, referencing both the person in the task and tasks in the person document.
+Advantage: Quick access from either side of the relationship.
+Disadvantage: Requires more complex updates to maintain consistency.
+
+*Denormalization:
+From Many to One: Include data from the referenced document in the primary document. Example: Storing part names directly in the product document to avoid additional lookups.
+From One to Many: Store data from the primary document in each of the related documents. Example: Storing product name in each part document.
+From One to Squillions: Store some details from the primary document in each related document or vice versa.
+Rules of Thumb for MongoDB Schema Design:
+
+1.Favor Embedding: Unless there’s a compelling reason not to, embedding is often the best choice for "one-to-few" relationships.
+2.Independent Access: If related documents need to be accessed separately, referencing is preferable.
+3.Array Size: Avoid embedding or using arrays of references if the number of items is very large.
+4.Application-Level Joins: If indexed properly, application-level joins can be efficient.
+5.Read-to-Write Ratio: Denormalization is beneficial when there are many reads compared to writes.
+6.Data Access Patterns: Design the schema based on how your application will query and update the data.
+
+
+*Denormalization Details:
+Principle: Store frequently accessed data together to improve read performance.
+Examples: Maintaining copies of fields, derived values, or summary statistics in separate documents.
