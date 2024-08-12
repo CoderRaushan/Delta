@@ -42,8 +42,8 @@ const addCustomer=async()=>
   let res=await customer1.save();
   console.log(res);
 
-  // let res=await Customer.find({}).populate("orders");
-  // console.log(res[0]);
+  let res1=await Customer.find({}).populate("orders");
+  console.log(res1[0]);
 };
 addCustomer();
 // const addOrders=async()=>
