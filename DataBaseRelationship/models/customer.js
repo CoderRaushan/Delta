@@ -26,6 +26,15 @@ const customerSchema=new Schema({
     ]
 });
 
+customerSchema.post("findOneAndDelete",async(customerdata)=>
+{
+   if(customerdata.orders.length)
+   {
+      const tesdata=await order.deleteMany({_id:{$in:customerdata.orders}});
+      console.log(tesdata);
+   }
+});
+
 const order=mongoose.model("order",ordreschems);
 const Customer=mongoose.model("Customer",customerSchema);
 const addCustomer=async()=>
@@ -45,7 +54,7 @@ const addCustomer=async()=>
   let res1=await Customer.find({}).populate("orders");
   console.log(res1[0]);
 };
-addCustomer();
+// addCustomer();
 // const addOrders=async()=>
 // {
 //     let res= await order.insertMany([
@@ -66,3 +75,34 @@ addCustomer();
 // };
 
 // addOrders();
+
+
+
+
+let addnewcustomer=async()=>
+{
+  let newcus=new Customer({
+  name:"Radhika singh",
+  });
+
+  let neword=new order({
+    item:"orange",
+    price:150,
+  });
+
+newcus.orders.push(neword);
+
+ await newcus.save();
+ await neword.save();
+
+ console.log("new customer is added");
+};
+// addnewcustomer();
+
+
+const delcus=async()=>{
+
+  const data= await Customer.findByIdAndDelete('66bce9339c2e162119d41e94');
+  console.log(data);
+};
+delcus();
